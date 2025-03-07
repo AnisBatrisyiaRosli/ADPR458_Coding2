@@ -76,11 +76,34 @@ aside img {
     border: 6px solid #c76969;
 }
 
+a:link, a:visited{
+    color:#cc9b9b;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#c76980;
+    text-decoration: underline;
+}
+
 #nav-menu li a {
     color: blue;
 }
 
-.menu-items li a {
+/********* Components *********/ 
+.button:link, .button:visited {
     color: black;
-    font-weight: bold;
+    background-color: #c76969; 
+    text-align: center; 
+    text-decoration: none; 
+    padding: 1rem 1.75rem; 
+    border-radius: .5rem; 
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
+    display: inline—block;
+    margin: 0 .25rem .25rem 0;
+    transition: background-color 0.5s ease;    
+ 
+}
+.button:hover {
+    background-color:#9b4747;
 }
