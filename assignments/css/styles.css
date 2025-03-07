@@ -12,8 +12,9 @@ body {
     background-color: #fff;
     font-family: "Playfair Display", serif;
     background-image: url("../image/beige-tiles.webp");
+    margin: 0px;
 }
-
+/*** Layout ***/
 .container {
     background-color: white;
     display: grid; 
@@ -28,7 +29,7 @@ body {
 grid-column: span 12;
 }
 
-
+/*Desktop Layout */ 
 @media screen and (min-width: 40em) {
 .col-span-8{
     grid-column: span 8;
@@ -40,7 +41,7 @@ grid-column: span 12;
 
 header {
     text-align: left;
-    background-color: dodgerblue;
+    background-color: #c76969;
     color: #fff;
     padding: 30px 40px; 
 }
@@ -67,6 +68,13 @@ aside img {
     border: 6px solid #c76969;
 }
 
+.circle {
+    width: 180px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 6px solid #c76969;
+}
 
 #nav-menu li a {
     color: blue;
