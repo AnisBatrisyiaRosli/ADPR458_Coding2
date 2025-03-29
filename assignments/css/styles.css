@@ -29,15 +29,6 @@ body {
 grid-column: span 12;
 }
 
-/*Desktop Layout */ 
-@media screen and (min-width: 40em) {
-.col-span-8{
-    grid-column: span 8;
-}
-.col-span-4{
-    grid-column: span 4;
-}
-}
 
 header {
     text-align: left;
@@ -59,6 +50,9 @@ h2 {
         font-size: 24px;
         }
 
+img {
+    max-width: 100%;
+}
 
 aside img {
     width: 180px;
@@ -124,7 +118,7 @@ nav a:hover {
 
 
 
-/********* Components *********/ 
+/****** Components ******/ 
 .button:link, .button:visited {
     color: black;
     background-color: #c76969; 
@@ -140,4 +134,50 @@ nav a:hover {
 }
 .button:hover {
     background-color:#9b4747;
+}
+
+/*card style*/ 
+.card {
+    background-color: #fff;
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 0 24px -8px rgba(0, 0, 0, 0.5);
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  
+  .card-text {
+    padding: 0 2rem;
+  }
+
+  
+/*Desktop Layout */ 
+@media (min-width: 40em) {
+  #nav-menu ul {
+    display: flex;
+    flex-direction: row;
+  }
+  #toggle-button {
+    display: none;
+  }  
+  a.button {
+    display: inline-block;
+  }
+  .col-span-8 {
+    grid-column: span 8;
+  }
+  .col-span-4 {
+    grid-column: span 4;
+  }
+
+  .work-section {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .card {
+    flex: 0 1 324px;
+  }
 }
